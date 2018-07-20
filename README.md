@@ -1,2 +1,2 @@
-# EJiNaQiManage
-An information management system with C#
+# Js-learning
+MDN-Webdoc 学习练习
