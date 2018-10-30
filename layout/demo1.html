@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			height: 100%
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+		header{
+			background-color: #000;
+			height: 80px;
+			padding: 0 150px;
+		}
+		.left{
+			font-size: 24px;
+			color: #FFF;
+			float: left;
+		}
+		span{
+			line-height: 80px;
+		}
+		.right{
+			float: right;
+			margin: 10px;
+		}
+		.right a{
+			color: #FFF;
+		}
+		.banner{
+			background-color: #66BB33;
+			height: 300px;
+			padding: 0 150px;	
+			overflow: hidden;
+			position: relative;		
+		}
+		.image,img{
+			float: left;
+			width: 600px;
+			height: 300px;
+			position: relative;
+		}
+		.image{
+			left: 50%;
+		}
+		img{
+			left: -50%;
+			display: none;
+		}
+		ul{
+			list-style-type: none;
+		}
+		.page {
+			float: left;
+			position: relative;
+			left: 20%;
+			top:70%;
+		}
+		.page li{
+			float: left;
+			padding: 10px;
+			background-color: #eee;
+			border: 1px solid black;
+			margin: 4px;
+			opacity: 0.8;		
+		}
+
+
+		.nav {
+			float: left;
+			border-bottom: 1px solid #7f827d;
+			padding-left: 150px;
+			width: 100%;
+			height: 80px;
+			position: relative;
+		}
+		.nav ul{
+			position: absolute;
+			bottom: -1px;
+			margin: 0px;
+		}
+		.nav li{
+			float: left;
+			font-size: 18px;
+			padding:10px 15px 15px 15px;
+			border:1px solid #7f827d;
+			border-bottom:1px solid #FFF;
+			background-color: #eee;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}
+		.nav li a{
+			font-family: Arial;
+			color: #000;
+			text-decoration: none;
+		}
+		.checked{
+			background-color: #000；
+		}
+		.content{
+			padding: 0 150px;
+		}
+		#home div{
+			float: left;
+			padding:80px;
+			border: 1px solid #7f827d;
+			margin: 5px;
+			text-align: center;
+
+		}
+		footer{
+			clear: both;
+			height: 120px;
+			background-color: #7f827d;
+			text-align: center;
+			color: #FFF;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="left">
+			<span>Logo</span>
+		</div>
+		<div class="right">
+			<a href="">Github</a>
+			<a href="">Register</a>
+			<a href="">Login</a>
+		</div>
+	</header>
+	<div class="banner">
+		<div class="image">
+			<img src="http://p0.so.qhimgs1.com/bdr/200_200_/t010f374ed7b619defc.jpg" class="one" >
+			<img src="http://www.hb.chinanews.com/photo/2013/1105/U4P1T52D145F1033DT20131105102009.jpg" class="two">
+			<img src="http://p0.so.qhimgs1.com/bdr/200_200_/t019c67bd080e2cdd6a.jpg" class="three">
+			<img src="http://p0.so.qhimgs1.com/bdr/200_200_/t01abd10f079c61df00.jpg" class="four">
+		</div>
+		<div class="page">
+			<ul>
+				<li>1</li>
+				<li class="checked">2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<nav class="nav">
+			<ul>
+				<li class="checked"><a href="#home">HOME</a></li>
+				<li><a href="profile">PROFILE</a></li>
+				<li><a href="about">ABOUT</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<div id="home">
+				<div>This home content1</div>
+				<div>This home content2</div>
+				<div>This home content3</div>
+				<div>This home content4</div>
+				<div>This home content5</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>© 2018 ife.baidu.com</p>
+	</footer>
+</body>
+</html>
