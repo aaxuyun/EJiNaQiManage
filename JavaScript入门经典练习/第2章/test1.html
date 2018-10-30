@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Data and Time </title>
+</head>
+<body>
+	<h1>Current Data and Time  </h1>
+	<p>	
+	<script type="text/javascript">
+		now=new Date();
+		// part1
+		// localTime=now.toString();
+		// utcTime=now.toGMTString();
+
+		// part2
+		hours=now.getHours();
+		mins=now.getMintes();
+		secs=now.getSeconds(;
+		millsecs=now.getMilliseconds();
+
+		//part1
+		// document.write("<b> Local time:</b>"+localTime+"</br>");
+		// document.write("<b> UTC time:</b>"+utcTime);
+
+		//part2
+		document.write("<h1>"+"Time:"+hours+":"+mins+":"+secs+":"+millsecs+"</h1>");
+
+	</script>
+	</p>
+</body>
+</html>

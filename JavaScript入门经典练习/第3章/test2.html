@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Back and Forward Buttons</title>
+
+</head>
+<body>
+	<h1>Back and Forward Buttons</h1>
+	<p name="p1">This page allows you go back and forward to page in the history list.These should be equivalent to the back and forwand arrow buttons in the browser's toolbar</p>
+	<p><a href="http://baidu.com">click me</a></p>
+	<p><a href="#p1">click me</a></p>
+	<p>
+		<input type="button" onclick="history.back()" value="<--back">
+		<input type="button" onclick="history.forward()" value="-->forward">
+		<input type="button" onclick="history.reload()" value="reload">
+		<script type="text/javascript">
+		//window.document.location.href="http://baidu.com";
+		items=window.history.length;
+		href=window.document.location.href;
+		document.write(href+"<hr>");
+		document.write(items);
+
+		</script>
+	</p>
+	
+</body>
+</html>
